@@ -1,13 +1,14 @@
 // emailList.js
-const patients = require("./patients");
+const elements = require("./elements");
 
-console.log(patients);
+// console.log(elements);
 
 // map executes the callback function for each element
-const emailAdresses = patients.map(function(patient) {
+const emailAdresses = elements.map(function(patient) {
   console.log("WHAT IS PATIENT", patient);
   // return only the email addresses to the output array
   return patient.email;
 });
 
 console.log(emailAdresses);
+console.log(elements);
